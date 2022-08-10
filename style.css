@@ -101,22 +101,27 @@ header ul {
     top:0;
 }
 
-.first {
+.first,
+.fifth {
     padding: 90px 20px 20px 20px;
     display: flex;
 }
 
-.first img {
+.first img,
+.fifth img {
+    /* ka cia daryti??? */
     max-width: 100%;
     /* object-fit: cover; */
 }
 
-.first .left-side h3 {
+.first .left-side h3,
+.fifth .left-side h3 {
     font-size: 10px;
     color: fuchsia;
 }
 
-.first .left-side .btn {
+.first .left-side .btn,
+.fifth .left-side .btn {
     background:
     linear-gradient(#fff, #fff) padding-box,
     linear-gradient(to right, fuchsia, red, yellow, green) border-box;
@@ -131,13 +136,15 @@ header ul {
     background-size: cover;
 }
 
-.second h2 {
+.second h2,
+.fourth h2 {
     font-weight: 300;
     padding-top: 50px;
     padding-left: 20px;
 }
 
-.second p {
+.second p,
+.fourth p {
     padding-bottom: 20px;
     padding-top: 5px;
     padding-left: 20px;
@@ -159,6 +166,63 @@ header ul {
 
 .third .delete {
     display: none;
+}
+
+.fourth span {
+    text-decoration: underline;
+}
+
+.grey-container {
+    display: flex;
+    background-color: lightgray;
+    margin-top: -11px;
+    border-radius: 10px;
+    padding: 15px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.gloop,
+.name {
+    padding-bottom: 10px;
+}
+
+.price {
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+.price img {
+    padding-right: 5px;
+}
+
+.gloop {
+    color: red;
+}
+
+.price,
+.name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.grey-container .left-side {
+    text-align: left;
+}
+
+.grey-container .right-side {
+    text-align: right;
+}
+
+.nft {
+    display: flex;
+}
+
+.nft1,
+.nft2,
+.nft3,
+.nft4 {
+    margin: 20px;
 }
 
 @media screen and (min-width:768px) {
@@ -204,6 +268,17 @@ header ul {
     .third .delete {
         display: inline;
     }
+
+    .nft {
+        justify-content: space-between;
+    }
+
+    /* .nft1,
+    .nft2,
+    .nft3,
+    .nft4 {
+        width: 25%;
+    } */
 }
 
 
